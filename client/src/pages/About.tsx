@@ -2,6 +2,7 @@ import { FC } from "react";
 import { useTranslation } from "react-i18next";
 import { Link } from "wouter";
 import CategorySlideshow from "@/components/CategorySlideshow";
+import SculptureViewer from "@/components/SculptureViewer";
 
 const About: FC = () => {
   const { t } = useTranslation();
@@ -48,10 +49,12 @@ const About: FC = () => {
                 {t("categoryClassical")}
               </h4>
               <div className="mt-4">
-                <img 
-                  src="/venus-sculpture.png" 
-                  alt="Venus of Arles sculpture" 
-                  className="h-64 mx-auto object-cover rounded-md"
+                <SculptureViewer
+                  imageSrc="/venus-sculpture.png"
+                  title={t("categoryClassical")}
+                  description={t("venusDescription")}
+                  alt="Venus of Arles sculpture"
+                  className="h-64 mx-auto"
                 />
                 <p className="text-base mt-4 text-gray-200">
                   {t("venusDescription")}
@@ -68,10 +71,12 @@ const About: FC = () => {
                 {t("categoryRenaissance")}
               </h4>
               <div className="mt-4">
-                <img 
-                  src="/david-sculpture.png" 
-                  alt="Michelangelo's David sculpture" 
-                  className="h-64 mx-auto object-cover rounded-md"
+                <SculptureViewer
+                  imageSrc="/david-sculpture.png"
+                  title={t("categoryRenaissance")}
+                  description={t("davidDescription")}
+                  alt="Michelangelo's David sculpture"
+                  className="h-64 mx-auto"
                 />
                 <p className="text-base mt-4 text-gray-200">
                   {t("davidDescription")}
@@ -88,10 +93,12 @@ const About: FC = () => {
                 {t("categoryModern")}
               </h4>
               <div className="mt-4">
-                <img 
-                  src="/flute-sculpture.png" 
-                  alt="Modern flute player sculpture" 
-                  className="h-64 mx-auto object-cover rounded-md"
+                <SculptureViewer
+                  imageSrc="/flute-sculpture.png"
+                  title={t("categoryModern")}
+                  description={t("fluteDescription")}
+                  alt="Modern flute player sculpture"
+                  className="h-64 mx-auto"
                 />
                 <p className="text-base mt-4 text-gray-200">
                   {t("fluteDescription")}
@@ -108,10 +115,12 @@ const About: FC = () => {
                 {t("categoryContemporary")}
               </h4>
               <div className="mt-4">
-                <img 
-                  src="/horse-sculpture.png" 
-                  alt="Abstract horse sculpture" 
-                  className="h-64 mx-auto object-cover rounded-md"
+                <SculptureViewer
+                  imageSrc="/horse-sculpture.png"
+                  title={t("categoryContemporary")}
+                  description={t("horseDescription")}
+                  alt="Abstract horse sculpture"
+                  className="h-64 mx-auto"
                 />
                 <p className="text-base mt-4 text-gray-200">
                   {t("horseDescription")}
@@ -128,10 +137,12 @@ const About: FC = () => {
                 {t("categoryAbstract")}
               </h4>
               <div className="mt-4">
-                <img 
-                  src="/face-sculpture.png" 
-                  alt="Surreal face sculpture" 
-                  className="h-64 mx-auto object-cover rounded-md"
+                <SculptureViewer
+                  imageSrc="/face-sculpture.png"
+                  title={t("categoryAbstract")}
+                  description={t("faceDescription")}
+                  alt="Surreal face sculpture"
+                  className="h-64 mx-auto"
                 />
                 <p className="text-base mt-4 text-gray-200">
                   {t("faceDescription")}
@@ -148,10 +159,12 @@ const About: FC = () => {
                 {t("categoryFigurative")}
               </h4>
               <div className="mt-4">
-                <img 
-                  src="/wall-figure-sculpture.png" 
-                  alt="Figure emerging from wall sculpture" 
-                  className="h-64 mx-auto object-cover rounded-md"
+                <SculptureViewer
+                  imageSrc="/wall-figure-sculpture.png"
+                  title={t("categoryFigurative")}
+                  description={t("wallFigureDescription")}
+                  alt="Figure emerging from wall sculpture"
+                  className="h-64 mx-auto"
                 />
                 <p className="text-base mt-4 text-gray-200">
                   {t("wallFigureDescription")}
