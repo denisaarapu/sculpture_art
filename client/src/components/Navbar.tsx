@@ -68,15 +68,15 @@ const Navbar: FC = () => {
       </div>
 
       {/* Mobile menu */}
-      <div className={`sm:hidden bg-gray-200 ${mobileMenuOpen ? 'block' : 'hidden'}`} id="mobile-menu">
+      <div className={`sm:hidden bg-gray-900 ${mobileMenuOpen ? 'block' : 'hidden'}`} id="mobile-menu">
         <div className="pt-2 pb-3 space-y-1 font-accent">
           {navigationLinks.map((link) => (
             <Link key={link.href} href={link.href}>
               <a className={cn(
                 "block px-3 py-2 text-base font-medium",
                 location === link.href 
-                  ? "text-accent" 
-                  : "text-primary hover:bg-gray-100"
+                  ? "text-yellow-400" 
+                  : "text-white hover:bg-gray-800"
               )}
                 onClick={() => setMobileMenuOpen(false)}
               >
