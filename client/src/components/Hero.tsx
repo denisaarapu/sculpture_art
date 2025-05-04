@@ -30,11 +30,6 @@ const Hero: FC = () => {
                 {t("viewGallery")}
               </a>
             </Link>
-            <Link href="/about">
-              <a className="bg-transparent border-2 border-white hover:bg-white hover:text-black font-accent font-medium px-6 py-3 rounded-md transition duration-300 inline-block">
-                {t("learnMore")}
-              </a>
-            </Link>
           </div>
         </div>
       </div>
