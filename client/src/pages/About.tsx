@@ -104,44 +104,7 @@ const About: FC = () => {
             </div>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
-            <div className="bg-gray-900 p-6 rounded-lg shadow-md">
-              <div className="text-yellow-400 text-3xl mb-4">
-                <i className="fas fa-hammer"></i>
-              </div>
-              <h4 className="text-lg font-heading font-semibold mb-2">
-                {t("materialTitle")}
-              </h4>
-              <p className="text-gray-300 text-sm">
-                {t("materialDescription")}
-              </p>
-            </div>
-            
-            <div className="bg-gray-900 p-6 rounded-lg shadow-md">
-              <div className="text-yellow-400 text-3xl mb-4">
-                <i className="fas fa-globe-americas"></i>
-              </div>
-              <h4 className="text-lg font-heading font-semibold mb-2">
-                {t("originsTitle")}
-              </h4>
-              <p className="text-gray-300 text-sm">
-                {t("originsDescription")}
-              </p>
-            </div>
-            
-            <div className="bg-gray-900 p-6 rounded-lg shadow-md">
-              <div className="text-yellow-400 text-3xl mb-4">
-                <i className="fas fa-clock"></i>
-              </div>
-              <h4 className="text-lg font-heading font-semibold mb-2">
-                {t("periodsTitle")}
-              </h4>
-              <p className="text-gray-300 text-sm">
-                {t("periodsDescription")}
-              </p>
-            </div>
-          </div>
-          
+
           <div className="text-center">
             <Link href="/newsletter">
               <div className="inline-block px-6 py-3 bg-yellow-400 hover:bg-yellow-500 text-black font-accent font-medium rounded-md transition duration-300 cursor-pointer">
