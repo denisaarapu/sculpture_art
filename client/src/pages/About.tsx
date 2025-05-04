@@ -64,9 +64,19 @@ const About: FC = () => {
               <div className="text-yellow-400 text-5xl mb-4">
                 <i className="fas fa-palette"></i>
               </div>
-              <h4 className="text-xl font-heading font-semibold">
+              <h4 className="text-xl font-heading font-semibold mb-4">
                 {t("categoryRenaissance")}
               </h4>
+              <div className="mt-4">
+                <img 
+                  src="/david-sculpture.png" 
+                  alt="Michelangelo's David sculpture" 
+                  className="h-64 mx-auto object-cover rounded-md"
+                />
+                <p className="text-base mt-4 text-gray-200">
+                  {t("davidDescription")}
+                </p>
+              </div>
             </div>
             
             {/* Modern */}

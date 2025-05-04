@@ -61,6 +61,8 @@ const enTranslations = {
   
   venusDescription: "Venus of Arles - Classical Greek sculpture, 1st century BCE. A marble masterpiece showcasing the idealized human form typical of Hellenistic art.",
   
+  davidDescription: "Michelangelo's David - Renaissance masterpiece, early 1500s. This monumental marble sculpture represents the biblical hero with extraordinary anatomical precision and emotional depth.",
+  
   exploreCollection: "Stay Tuned",
   
   // Newsletter section
@@ -140,6 +142,8 @@ const deTranslations = {
   categoryFigurative: "Figurativ",
   
   venusDescription: "Venus von Arles - Klassische griechische Skulptur, 1. Jahrhundert v. Chr. Ein Marmormeisterwerk, das die idealisierte menschliche Form zeigt, typisch für die hellenistische Kunst.",
+  
+  davidDescription: "Michelangelos David - Renaissance-Meisterwerk, frühes 16. Jahrhundert. Diese monumentale Marmorskulptur stellt den biblischen Helden mit außergewöhnlicher anatomischer Präzision und emotionaler Tiefe dar.",
   
   exploreCollection: "Bleiben Sie dran",
   
