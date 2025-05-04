@@ -17,7 +17,7 @@ const About: FC = () => {
             <div className="md:flex">
               <div className="md:flex-shrink-0 md:w-1/2">
                 <img 
-                  src="/attached_assets/buddha.png" 
+                  src="/buddha.png" 
                   alt="Buddha sculpture" 
                   className="h-full w-full object-cover"
                 />
