@@ -44,7 +44,7 @@ const Logo: FC<LogoProps> = ({
       </svg>
       <span className={`${sizeClasses[size]} font-heading font-semibold ${textColor}`}>
         Sculpture
-        <span className={accentColor}>Gallery</span>
+        <span className={accentColor}>Art</span>
       </span>
     </div>
   );

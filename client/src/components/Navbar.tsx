@@ -22,7 +22,7 @@ const Navbar: FC = () => {
   ];
 
   return (
-    <nav className="bg-white shadow-md sticky top-0 z-50">
+    <nav className="bg-gray-200 shadow-md sticky top-0 z-50">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16">
           <div className="flex items-center">
@@ -68,7 +68,7 @@ const Navbar: FC = () => {
       </div>
 
       {/* Mobile menu */}
-      <div className={`sm:hidden ${mobileMenuOpen ? 'block' : 'hidden'}`} id="mobile-menu">
+      <div className={`sm:hidden bg-gray-200 ${mobileMenuOpen ? 'block' : 'hidden'}`} id="mobile-menu">
         <div className="pt-2 pb-3 space-y-1 font-accent">
           {navigationLinks.map((link) => (
             <Link key={link.href} href={link.href}>

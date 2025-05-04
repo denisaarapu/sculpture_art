@@ -111,7 +111,7 @@ const Footer: FC = () => {
         </div>
         
         <div className="border-t border-gray-700 mt-10 pt-6 text-center text-gray-500 text-sm">
-          <p>&copy; {currentYear} Sculpture Gallery. {t("allRightsReserved")}</p>
+          <p>&copy; {currentYear} Sculpture Art. {t("allRightsReserved")}</p>
         </div>
       </div>
     </footer>
