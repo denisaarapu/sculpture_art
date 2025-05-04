@@ -53,6 +53,16 @@ const About: FC = () => {
                 <h4 className="text-lg font-heading font-semibold">
                   {t("categoryClassical")}
                 </h4>
+                <div className="mt-4">
+                  <img 
+                    src="/venus-sculpture.png" 
+                    alt="Venus of Arles sculpture" 
+                    className="h-40 mx-auto object-cover rounded-md"
+                  />
+                  <p className="text-sm mt-2 text-gray-300">
+                    {t("venusDescription")}
+                  </p>
+                </div>
               </div>
               
               <div className="bg-gray-800 p-4 rounded-lg shadow-lg text-center hover:bg-gray-700 transition duration-300">

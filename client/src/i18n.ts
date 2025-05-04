@@ -59,6 +59,8 @@ const enTranslations = {
   categoryAbstract: "Abstract",
   categoryFigurative: "Figurative",
   
+  venusDescription: "Venus of Arles - Classical Greek sculpture, 1st century BCE. A marble masterpiece showcasing the idealized human form typical of Hellenistic art.",
+  
   exploreCollection: "Stay Tuned",
   
   // Newsletter section
@@ -136,6 +138,8 @@ const deTranslations = {
   categoryContemporary: "Zeitgenössisch",
   categoryAbstract: "Abstrakt",
   categoryFigurative: "Figurativ",
+  
+  venusDescription: "Venus von Arles - Klassische griechische Skulptur, 1. Jahrhundert v. Chr. Ein Marmormeisterwerk, das die idealisierte menschliche Form zeigt, typisch für die hellenistische Kunst.",
   
   exploreCollection: "Bleiben Sie dran",
   
