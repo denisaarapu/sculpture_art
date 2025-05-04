@@ -7,15 +7,15 @@ const Hero: FC = () => {
 
   return (
     <section id="home" className="bg-primary text-white relative overflow-hidden h-screen">
-      <div className="absolute inset-0 z-0 flex justify-center items-center overflow-hidden">
+      <div className="absolute inset-0 z-0 overflow-hidden">
         <img 
           src="/attached_assets/david-michelangelo.png"
           alt="David by Michelangelo" 
-          className="h-auto w-3/4 object-contain opacity-95"
-          style={{ maxHeight: "90vh" }}
+          className="w-full h-full object-cover opacity-95"
+          style={{ objectPosition: "top center" }}
         />
       </div>
-      <div className="absolute inset-0 bg-gradient-to-r from-black via-black/60 to-black/60 z-0"></div>
+      <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/40 to-black/70 z-0"></div>
       <div className="container mx-auto px-4 py-24 sm:py-32 relative z-10 h-full flex items-center">
         <div className="max-w-3xl">
           <h1 className="text-4xl sm:text-5xl md:text-6xl font-heading font-bold mb-6 text-white drop-shadow-lg">
