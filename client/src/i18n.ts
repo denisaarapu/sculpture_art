@@ -12,7 +12,7 @@ const enTranslations = {
   // Hero section
   heroTitle: "Discover Timeless Sculptural Art",
   heroSubtitle: "Exploring the beauty and craftsmanship of marble and stone sculptures from renowned artists.",
-  viewGallery: "View Gallery",
+  viewGallery: "Explore More",
   learnMore: "Learn More",
   
   // Slideshow section
@@ -89,7 +89,7 @@ const deTranslations = {
   // Hero section
   heroTitle: "Entdecken Sie zeitlose Bildhauerkunst",
   heroSubtitle: "Erkunden Sie die Schönheit und Handwerkskunst von Marmor- und Steinskulpturen berühmter Künstler.",
-  viewGallery: "Galerie ansehen",
+  viewGallery: "Mehr entdecken",
   learnMore: "Mehr erfahren",
   
   // Slideshow section

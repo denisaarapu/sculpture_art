@@ -36,20 +36,7 @@ const About: FC = () => {
             </div>
           </div>
           
-          <div className="mb-12">
-            <h3 className="text-2xl font-heading font-semibold mb-4 text-yellow-400">
-              {t("sculptureHistoryTitle")}
-            </h3>
-            <p className="text-gray-200 mb-4">
-              {t("sculptureHistoryP1")}
-            </p>
-            <p className="text-gray-200 mb-4">
-              {t("sculptureHistoryP2")}
-            </p>
-            <p className="text-gray-200">
-              {t("sculptureHistoryP3")}
-            </p>
-          </div>
+
           
           {/* Categories Section */}
           <div className="mb-12">
