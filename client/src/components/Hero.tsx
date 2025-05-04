@@ -50,9 +50,9 @@ const Hero: FC = () => {
           </p>
           <div className="flex flex-wrap gap-4">
             <Link href="/#gallery">
-              <a className="bg-yellow-400 hover:bg-yellow-500 text-black font-accent font-medium px-6 py-3 rounded-md transition duration-300 inline-block">
+              <div className="bg-yellow-400 hover:bg-yellow-500 text-black font-accent font-medium px-6 py-3 rounded-md transition duration-300 inline-block cursor-pointer">
                 {t("viewGallery")}
-              </a>
+              </div>
             </Link>
           </div>
           

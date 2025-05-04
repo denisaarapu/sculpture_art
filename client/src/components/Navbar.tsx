@@ -26,9 +26,9 @@ const Navbar: FC = () => {
         <div className="flex justify-between h-16">
           <div className="flex items-center">
             <Link href="/">
-              <a className="flex-shrink-0 flex items-center">
+              <div className="flex-shrink-0 flex items-center cursor-pointer">
                 <Logo textColor="text-white" />
-              </a>
+              </div>
             </Link>
           </div>
           
@@ -36,14 +36,14 @@ const Navbar: FC = () => {
             <div className="flex space-x-8 font-accent">
               {navigationLinks.map((link) => (
                 <Link key={link.href} href={link.href}>
-                  <a className={cn(
-                    "px-3 py-2 text-sm font-medium transition-colors",
+                  <div className={cn(
+                    "px-3 py-2 text-sm font-medium transition-colors cursor-pointer",
                     location === link.href 
                       ? "text-yellow-400" 
                       : "text-white hover:text-yellow-400"
                   )}>
                     {link.label}
-                  </a>
+                  </div>
                 </Link>
               ))}
             </div>
@@ -71,8 +71,8 @@ const Navbar: FC = () => {
         <div className="pt-2 pb-3 space-y-1 font-accent">
           {navigationLinks.map((link) => (
             <Link key={link.href} href={link.href}>
-              <a className={cn(
-                "block px-3 py-2 text-base font-medium",
+              <div className={cn(
+                "block px-3 py-2 text-base font-medium cursor-pointer",
                 location === link.href 
                   ? "text-yellow-400" 
                   : "text-white hover:bg-gray-800"
@@ -80,7 +80,7 @@ const Navbar: FC = () => {
                 onClick={() => setMobileMenuOpen(false)}
               >
                 {link.label}
-              </a>
+              </div>
             </Link>
           ))}
           <div className="flex px-3 py-2 space-x-4">
