@@ -1,0 +1,96 @@
+import { FC, useState } from "react";
+import { Link, useLocation } from "wouter";
+import { useTranslation } from "react-i18next";
+import Logo from "./Logo";
+import LanguageSwitcher from "./LanguageSwitcher";
+import { cn } from "@/lib/utils";
+
+const Navbar: FC = () => {
+  const [location] = useLocation();
+  const { t } = useTranslation();
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+
+  const toggleMobileMenu = () => {
+    setMobileMenuOpen(!mobileMenuOpen);
+  };
+
+  const navigationLinks = [
+    { href: "/", label: t("home") },
+    { href: "/#gallery", label: t("gallery") },
+    { href: "/about", label: t("about") },
+    { href: "/newsletter", label: t("newsletter") },
+  ];
+
+  return (
+    <nav className="bg-white shadow-md sticky top-0 z-50">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex justify-between h-16">
+          <div className="flex items-center">
+            <Link href="/">
+              <a className="flex-shrink-0 flex items-center">
+                <Logo />
+              </a>
+            </Link>
+          </div>
+          
+          <div className="hidden sm:ml-6 sm:flex sm:items-center space-x-8">
+            <div className="flex space-x-8 font-accent">
+              {navigationLinks.map((link) => (
+                <Link key={link.href} href={link.href}>
+                  <a className={cn(
+                    "px-3 py-2 text-sm font-medium transition-colors",
+                    location === link.href 
+                      ? "text-accent" 
+                      : "text-primary hover:text-accent"
+                  )}>
+                    {link.label}
+                  </a>
+                </Link>
+              ))}
+            </div>
+            
+            <LanguageSwitcher />
+          </div>
+          
+          {/* Mobile menu button */}
+          <div className="sm:hidden flex items-center">
+            <button
+              onClick={toggleMobileMenu}
+              type="button"
+              className="inline-flex items-center justify-center p-2 rounded-md text-primary hover:bg-gray-100 focus:outline-none"
+              aria-controls="mobile-menu"
+              aria-expanded={mobileMenuOpen}
+            >
+              <i className="fas fa-bars"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      {/* Mobile menu */}
+      <div className={`sm:hidden ${mobileMenuOpen ? 'block' : 'hidden'}`} id="mobile-menu">
+        <div className="pt-2 pb-3 space-y-1 font-accent">
+          {navigationLinks.map((link) => (
+            <Link key={link.href} href={link.href}>
+              <a className={cn(
+                "block px-3 py-2 text-base font-medium",
+                location === link.href 
+                  ? "text-accent" 
+                  : "text-primary hover:bg-gray-100"
+              )}
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                {link.label}
+              </a>
+            </Link>
+          ))}
+          <div className="flex px-3 py-2 space-x-4">
+            <LanguageSwitcher />
+          </div>
+        </div>
+      </div>
+    </nav>
+  );
+};
+
+export default Navbar;
