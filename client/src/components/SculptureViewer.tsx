@@ -1,4 +1,4 @@
-import { FC, useState } from "react";
+import { FC, useState, useEffect } from "react";
 import { 
   Dialog, 
   DialogContent, 
@@ -28,6 +28,7 @@ const SculptureViewer: FC<SculptureViewerProps> = ({
   const [isDragging, setIsDragging] = useState(false);
   const [lastPos, setLastPos] = useState({ x: 0, y: 0 });
   const [zoom, setZoom] = useState(1);
+  const [isOpen, setIsOpen] = useState(false);
 
   const handleMouseDown = (e: React.MouseEvent) => {
     setIsDragging(true);
@@ -95,16 +96,31 @@ const SculptureViewer: FC<SculptureViewerProps> = ({
     setRotation({ x: 0, y: 0 });
     setZoom(1);
   };
+  
+  // Reset values when dialog closes
+  useEffect(() => {
+    if (!isOpen) {
+      setTimeout(() => {
+        setRotation({ x: 0, y: 0 });
+        setZoom(1);
+      }, 300); // Slight delay to allow closing animation
+    }
+  }, [isOpen]);
 
   return (
-    <Dialog>
+    <Dialog open={isOpen} onOpenChange={setIsOpen}>
       <DialogTrigger asChild>
-        <div className={`cursor-pointer transition-transform hover:scale-105 ${className || ""}`}>
+        <div className={`relative cursor-pointer overflow-hidden rounded-md ${className || ""} group`}>
           <img 
             src={imageSrc} 
             alt={alt || title} 
-            className="rounded-md w-full h-full object-cover"
+            className="rounded-md w-full h-full object-contain transition-transform duration-500 group-hover:scale-105"
           />
+          <div className="absolute inset-0 bg-black bg-opacity-20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+            <span className="text-white bg-black bg-opacity-50 px-3 py-1 rounded-full text-sm">
+              View in 3D
+            </span>
+          </div>
         </div>
       </DialogTrigger>
       <DialogContent className="sm:max-w-[600px] md:max-w-[800px] lg:max-w-[1000px] max-h-[90vh] overflow-hidden bg-gray-900 text-white border-gray-700">
@@ -125,9 +141,9 @@ const SculptureViewer: FC<SculptureViewerProps> = ({
           onTouchEnd={handleTouchEnd}
         >
           <div 
-            className="transition-all duration-200 ease-out w-full h-full flex items-center justify-center" 
+            className="transition-all duration-300 ease-out w-full h-full flex items-center justify-center" 
             style={{ 
-              transform: `rotateX(${rotation.x}deg) rotateY(${rotation.y}deg) scale(${zoom})`,
+              transform: `perspective(1000px) rotateX(${rotation.x}deg) rotateY(${rotation.y}deg) scale(${zoom})`,
               transformStyle: 'preserve-3d',
               backfaceVisibility: 'hidden'
             }}
@@ -137,6 +153,9 @@ const SculptureViewer: FC<SculptureViewerProps> = ({
               alt={alt || title} 
               className="max-h-[90%] max-w-[90%] object-contain"
               draggable="false"
+              style={{ 
+                filter: 'drop-shadow(0 20px 13px rgba(0, 0, 0, 0.6))'
+              }}
             />
           </div>
           <div className="absolute top-2 right-2 flex space-x-2">
