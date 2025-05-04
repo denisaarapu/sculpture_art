@@ -144,9 +144,19 @@ const About: FC = () => {
               <div className="text-yellow-400 text-5xl mb-4">
                 <i className="fas fa-user"></i>
               </div>
-              <h4 className="text-xl font-heading font-semibold">
+              <h4 className="text-xl font-heading font-semibold mb-4">
                 {t("categoryFigurative")}
               </h4>
+              <div className="mt-4">
+                <img 
+                  src="/wall-figure-sculpture.png" 
+                  alt="Figure emerging from wall sculpture" 
+                  className="h-64 mx-auto object-cover rounded-md"
+                />
+                <p className="text-base mt-4 text-gray-200">
+                  {t("wallFigureDescription")}
+                </p>
+              </div>
             </div>
           </CategorySlideshow>
           

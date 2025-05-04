@@ -69,6 +69,8 @@ const enTranslations = {
   
   faceDescription: "Surreal Face - Abstract conceptual sculpture, late 20th century. This plaster piece explores human identity and emotion through fragmentation and symbolic representation of the face overlaid with a hand.",
   
+  wallFigureDescription: "Breaking Through - Figurative bronze sculpture, contemporary period. This dynamic piece depicts a human figure emerging from a wall, representing freedom, transformation, and the struggle to overcome barriers.",
+  
   exploreCollection: "Stay Tuned",
   
   // Newsletter section
@@ -156,6 +158,8 @@ const deTranslations = {
   horseDescription: "Abstraktes Pferd - Zeitgenössische Metallskulptur, frühes 21. Jahrhundert. Diese dynamische Bronzestruktur fängt Bewegung und Energie durch ihre dekonstruierte Form ein und veranschaulicht zeitgenössische bildhauerische Techniken.",
   
   faceDescription: "Surreales Gesicht - Abstrakte konzeptuelle Skulptur, spätes 20. Jahrhundert. Dieses Gipsstück erforscht menschliche Identität und Emotion durch Fragmentierung und symbolische Darstellung des Gesichts, überlagert mit einer Hand.",
+  
+  wallFigureDescription: "Durchbruch - Figurative Bronzeskulptur, zeitgenössische Periode. Dieses dynamische Stück zeigt eine menschliche Figur, die aus einer Wand hervortritt und Freiheit, Transformation und den Kampf zur Überwindung von Barrieren darstellt.",
   
   exploreCollection: "Bleiben Sie dran",
   
