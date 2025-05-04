@@ -119,7 +119,7 @@ const deTranslations = {
   sculptureHistoryP3: "Renaissance-Meister wie Michelangelo und Donatello belebten klassische Traditionen wieder und führten gleichzeitig Innovationen in Form und Ausdruck ein. Von der dynamischen Bewegung des Barock bis zur Abstraktion der Moderne und zeitgenössischen experimentellen Ansätzen entwickelt sich die Bildhauerei ständig weiter und behält gleichzeitig ihre starke Fähigkeit, Ideen durch dreidimensionale Form zu kommunizieren.",
   
   categoriesSectionTitle: "Skulpturenkategorien",
-  categoriesDescription: "Entdecken Sie unsere vielfältige Sammlung von Skulpturen, organisiert nach Stil, Epoche und Medium.",
+  categoriesDescription: "Entdecken Sie eine vielfältige Sammlung von Skulpturen, organisiert nach Stil, Epoche und Medium.",
   
   materialTitle: "Materialien",
   materialDescription: "Unsere Sammlung umfasst Werke aus Marmor, Bronze, Stein, Holz und zeitgenössischen Materialien, die jeweils unterschiedliche Techniken und künstlerische Ansätze zeigen.",

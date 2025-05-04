@@ -36,9 +36,72 @@ const About: FC = () => {
             </div>
           </div>
           
-
-
-
+          {/* Categories Section */}
+          <div className="mb-12">
+            <h3 className="text-2xl font-heading font-semibold mb-6 text-yellow-400 text-center">
+              {t("categoriesSectionTitle")}
+            </h3>
+            <p className="text-gray-200 mb-8 text-center">
+              {t("categoriesDescription")}
+            </p>
+            
+            <div className="grid grid-cols-2 md:grid-cols-3 gap-4 mb-8">
+              <div className="bg-gray-800 p-4 rounded-lg shadow-lg text-center hover:bg-gray-700 transition duration-300">
+                <div className="text-yellow-400 text-4xl mb-3">
+                  <i className="fas fa-university"></i>
+                </div>
+                <h4 className="text-lg font-heading font-semibold">
+                  {t("categoryClassical")}
+                </h4>
+              </div>
+              
+              <div className="bg-gray-800 p-4 rounded-lg shadow-lg text-center hover:bg-gray-700 transition duration-300">
+                <div className="text-yellow-400 text-4xl mb-3">
+                  <i className="fas fa-palette"></i>
+                </div>
+                <h4 className="text-lg font-heading font-semibold">
+                  {t("categoryRenaissance")}
+                </h4>
+              </div>
+              
+              <div className="bg-gray-800 p-4 rounded-lg shadow-lg text-center hover:bg-gray-700 transition duration-300">
+                <div className="text-yellow-400 text-4xl mb-3">
+                  <i className="fas fa-cubes"></i>
+                </div>
+                <h4 className="text-lg font-heading font-semibold">
+                  {t("categoryModern")}
+                </h4>
+              </div>
+              
+              <div className="bg-gray-800 p-4 rounded-lg shadow-lg text-center hover:bg-gray-700 transition duration-300">
+                <div className="text-yellow-400 text-4xl mb-3">
+                  <i className="fas fa-vector-square"></i>
+                </div>
+                <h4 className="text-lg font-heading font-semibold">
+                  {t("categoryContemporary")}
+                </h4>
+              </div>
+              
+              <div className="bg-gray-800 p-4 rounded-lg shadow-lg text-center hover:bg-gray-700 transition duration-300">
+                <div className="text-yellow-400 text-4xl mb-3">
+                  <i className="fas fa-shapes"></i>
+                </div>
+                <h4 className="text-lg font-heading font-semibold">
+                  {t("categoryAbstract")}
+                </h4>
+              </div>
+              
+              <div className="bg-gray-800 p-4 rounded-lg shadow-lg text-center hover:bg-gray-700 transition duration-300">
+                <div className="text-yellow-400 text-4xl mb-3">
+                  <i className="fas fa-user"></i>
+                </div>
+                <h4 className="text-lg font-heading font-semibold">
+                  {t("categoryFigurative")}
+                </h4>
+              </div>
+            </div>
+          </div>
+          
           <div className="text-center">
             <Link href="/newsletter">
               <div className="inline-block px-6 py-3 bg-yellow-400 hover:bg-yellow-500 text-black font-accent font-medium rounded-md transition duration-300 cursor-pointer">
