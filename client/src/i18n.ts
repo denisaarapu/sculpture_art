@@ -6,7 +6,7 @@ const enTranslations = {
   // Navigation
   home: "Home",
   gallery: "Gallery",
-  about: "About",
+  about: "Categories",
   newsletter: "Newsletter",
   
   // Hero section
@@ -30,7 +30,7 @@ const enTranslations = {
   loadMore: "Load More",
   
   // About section
-  aboutTitle: "About Sculpture Collection",
+  aboutTitle: "Sculpture Categories",
   ourMissionTitle: "Mission",
   ourMissionP1: "Dedicated to preserving and showcasing the rich heritage of sculptural art from around the world. From classical marble masterpieces to contemporary interpretations, the power of three-dimensional art inspires and transforms.",
   ourMissionP2: "Founded in 1998, this collection includes works from renowned sculptors across different periods and styles, offering visitors a comprehensive journey through the evolution of this timeless art form.",
@@ -96,7 +96,7 @@ const deTranslations = {
   // Navigation
   home: "Startseite",
   gallery: "Galerie",
-  about: "Über uns",
+  about: "Kategorien",
   newsletter: "Newsletter",
   
   // Hero section
@@ -120,7 +120,7 @@ const deTranslations = {
   loadMore: "Mehr laden",
   
   // About section
-  aboutTitle: "Über Skulpturensammlung",
+  aboutTitle: "Skulpturenkategorien",
   ourMissionTitle: "Mission",
   ourMissionP1: "Widmet sich der Bewahrung und Präsentation des reichen Erbes der Bildhauerkunst aus aller Welt. Von klassischen Marmormeisterwerken bis hin zu zeitgenössischen Interpretationen zeigt sich die Kraft der dreidimensionalen Kunst, zu inspirieren und zu transformieren.",
   ourMissionP2: "Gegründet im Jahr 1998 umfasst diese Sammlung Werke renommierter Bildhauer verschiedener Epochen und Stile und bietet Besuchern eine umfassende Reise durch die Evolution dieser zeitlosen Kunstform.",
