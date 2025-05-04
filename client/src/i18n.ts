@@ -40,6 +40,9 @@ const enTranslations = {
   sculptureHistoryP2: "The classical period brought remarkable achievements in marble sculpting from ancient Greece and Rome, establishing techniques and aesthetic principles that would influence artists for centuries to come.",
   sculptureHistoryP3: "Renaissance masters like Michelangelo and Donatello revived classical traditions while introducing innovations in form and expression. From Baroque's dynamic movement to modernism's abstraction and contemporary experimental approaches, sculpture continues to evolve while maintaining its powerful ability to communicate ideas through three-dimensional form.",
   
+  categoriesSectionTitle: "Sculpture Categories",
+  categoriesDescription: "Explore our diverse collection of sculptures organized by style, period, and medium.",
+  
   materialTitle: "Materials",
   materialDescription: "Our collection features works in marble, bronze, stone, wood, and contemporary materials, each showcasing different techniques and artistic approaches.",
   
@@ -48,6 +51,13 @@ const enTranslations = {
   
   periodsTitle: "Periods",
   periodsDescription: "From ancient classical works to Renaissance masterpieces and contemporary innovations, our collection spans multiple historical periods and styles.",
+  
+  categoryClassical: "Classical",
+  categoryRenaissance: "Renaissance",
+  categoryModern: "Modern",
+  categoryContemporary: "Contemporary",
+  categoryAbstract: "Abstract",
+  categoryFigurative: "Figurative",
   
   exploreCollection: "Explore Our Collection",
   
@@ -107,6 +117,9 @@ const deTranslations = {
   sculptureHistoryP2: "Die klassische Periode brachte bemerkenswerte Erfolge in der Marmorbildhauerei aus dem antiken Griechenland und Rom mit sich und etablierte Techniken und ästhetische Prinzipien, die Künstler über Jahrhunderte hinweg beeinflussen sollten.",
   sculptureHistoryP3: "Renaissance-Meister wie Michelangelo und Donatello belebten klassische Traditionen wieder und führten gleichzeitig Innovationen in Form und Ausdruck ein. Von der dynamischen Bewegung des Barock bis zur Abstraktion der Moderne und zeitgenössischen experimentellen Ansätzen entwickelt sich die Bildhauerei ständig weiter und behält gleichzeitig ihre starke Fähigkeit, Ideen durch dreidimensionale Form zu kommunizieren.",
   
+  categoriesSectionTitle: "Skulpturenkategorien",
+  categoriesDescription: "Entdecken Sie unsere vielfältige Sammlung von Skulpturen, organisiert nach Stil, Epoche und Medium.",
+  
   materialTitle: "Materialien",
   materialDescription: "Unsere Sammlung umfasst Werke aus Marmor, Bronze, Stein, Holz und zeitgenössischen Materialien, die jeweils unterschiedliche Techniken und künstlerische Ansätze zeigen.",
   
@@ -115,6 +128,13 @@ const deTranslations = {
   
   periodsTitle: "Epochen",
   periodsDescription: "Von antiken klassischen Werken über Renaissance-Meisterwerke bis hin zu zeitgenössischen Innovationen umfasst unsere Sammlung mehrere historische Epochen und Stile.",
+  
+  categoryClassical: "Klassisch",
+  categoryRenaissance: "Renaissance",
+  categoryModern: "Modern",
+  categoryContemporary: "Zeitgenössisch",
+  categoryAbstract: "Abstrakt",
+  categoryFigurative: "Figurativ",
   
   exploreCollection: "Entdecken Sie unsere Sammlung",
   

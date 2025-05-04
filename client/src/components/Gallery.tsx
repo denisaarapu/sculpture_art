@@ -41,40 +41,17 @@ const Gallery: FC = () => {
   };
 
   return (
-    <section id="gallery" className="py-16 bg-white">
+    <section id="gallery" className="py-16 bg-black text-white">
       <div className="container mx-auto px-4">
-        <h2 className="text-3xl sm:text-4xl font-heading font-bold mb-12 text-center">
+        <h2 className="text-3xl sm:text-4xl font-heading font-bold mb-12 text-center text-white">
           {t("galleryTitle")}
         </h2>
-
-        {/* Folder Navigation */}
-        <div className="mb-10">
-          <h3 className="text-lg font-accent font-medium mb-4 text-primary">
-            {t("categories")}
-          </h3>
-          <div className="flex flex-wrap gap-2 mb-8">
-            {folders.map((folder) => (
-              <button
-                key={folder.id}
-                onClick={() => selectFolder(folder.id)}
-                className={cn(
-                  "folder-btn px-4 py-2 rounded-md text-sm font-accent transition duration-200 border border-primary",
-                  selectedFolder === folder.id 
-                    ? "bg-primary text-white" 
-                    : "text-primary hover:bg-gray-100"
-                )}
-              >
-                {folder.name}
-              </button>
-            ))}
-          </div>
-        </div>
 
         {/* Gallery Grid */}
         {isLoading ? (
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
             {Array(6).fill(0).map((_, index) => (
-              <div key={index} className="gallery-item rounded-lg overflow-hidden shadow-md bg-white">
+              <div key={index} className="gallery-item rounded-lg overflow-hidden shadow-md bg-gray-900">
                 <Skeleton className="h-72 w-full" />
                 <div className="p-4">
                   <Skeleton className="h-6 w-3/4 mb-2" />
@@ -87,7 +64,7 @@ const Gallery: FC = () => {
         ) : (
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
             {displayedSculptures.map((sculpture) => (
-              <div key={sculpture.id} className="gallery-item rounded-lg overflow-hidden shadow-md bg-white">
+              <div key={sculpture.id} className="gallery-item rounded-lg overflow-hidden shadow-md bg-gray-900">
                 <div className="relative h-72 overflow-hidden">
                   <img 
                     src={sculpture.imageUrl} 
@@ -96,14 +73,14 @@ const Gallery: FC = () => {
                   />
                 </div>
                 <div className="p-4">
-                  <h3 className="text-lg font-heading font-semibold mb-2">
+                  <h3 className="text-lg font-heading font-semibold mb-2 text-white">
                     {currentLanguage === "de" ? sculpture.titleDe : sculpture.title}
                   </h3>
-                  <p className="text-sm text-gray-600 mb-3">
+                  <p className="text-sm text-gray-300 mb-3">
                     {currentLanguage === "de" ? sculpture.descriptionDe : sculpture.description}
                   </p>
                   <button 
-                    className="text-accent hover:text-accent-light text-sm font-accent font-medium inline-flex items-center"
+                    className="text-yellow-400 hover:text-yellow-300 text-sm font-accent font-medium inline-flex items-center"
                   >
                     {t("viewDetails")}
                     <i className="fas fa-arrow-right ml-2"></i>
@@ -119,7 +96,7 @@ const Gallery: FC = () => {
             <Button
               onClick={loadMore}
               variant="outline"
-              className="px-6 py-3 border-2 border-primary text-primary hover:bg-primary hover:text-white rounded-md font-accent font-medium transition duration-300"
+              className="px-6 py-3 border-2 border-yellow-400 text-yellow-400 hover:bg-yellow-500 hover:text-black rounded-md font-accent font-medium transition duration-300"
             >
               {t("loadMore")}
             </Button>
