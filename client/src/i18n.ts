@@ -15,6 +15,10 @@ const enTranslations = {
   viewGallery: "View Gallery",
   learnMore: "Learn More",
   
+  // Slideshow section
+  featuredSculptures: "Featured Sculptures",
+  material: "Material",
+  
   // Gallery section
   galleryTitle: "Sculpture Collection",
   categories: "Categories",
@@ -77,6 +81,10 @@ const deTranslations = {
   heroSubtitle: "Erkunden Sie die Schönheit und Handwerkskunst von Marmor- und Steinskulpturen berühmter Künstler.",
   viewGallery: "Galerie ansehen",
   learnMore: "Mehr erfahren",
+  
+  // Slideshow section
+  featuredSculptures: "Vorgestellte Skulpturen",
+  material: "Material",
   
   // Gallery section
   galleryTitle: "Skulpturensammlung",
