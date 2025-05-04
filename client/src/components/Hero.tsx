@@ -40,12 +40,12 @@ const Hero: FC = () => {
       
       <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/40 to-black/70 z-0"></div>
       
-      <div className="container mx-auto px-4 py-24 sm:py-32 relative z-10 h-full flex items-center">
+      <div className="container mx-auto px-4 py-16 sm:py-24 md:py-32 relative z-10 h-full flex items-center">
         <div className="max-w-3xl">
-          <h1 className="text-4xl sm:text-5xl md:text-6xl font-heading font-bold mb-6 text-white drop-shadow-lg">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-heading font-bold mb-4 sm:mb-6 text-white drop-shadow-lg">
             {t("heroTitle")}
           </h1>
-          <p className="text-xl mb-8 text-gray-100 drop-shadow-md">
+          <p className="text-lg sm:text-xl mb-6 sm:mb-8 text-gray-100 drop-shadow-md">
             {t("heroSubtitle")}
           </p>
           <div className="flex flex-wrap gap-4">

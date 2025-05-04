@@ -62,7 +62,7 @@ const CategorySlideshow: FC<CategorySlideshowProps> = ({ children }) => {
       <div className="relative overflow-hidden" ref={emblaRef}>
         <div className="flex">
           {children.map((child, index) => (
-            <div key={index} className="flex-[0_0_100%] min-w-0 px-4 md:flex-[0_0_80%] lg:flex-[0_0_65%]">
+            <div key={index} className="flex-[0_0_100%] min-w-0 px-2 sm:px-4 md:flex-[0_0_80%] lg:flex-[0_0_65%]">
               {child}
             </div>
           ))}

@@ -15,7 +15,7 @@ const About: FC = () => {
           </h2>
           
           <div className="bg-gray-900 shadow-md rounded-lg overflow-hidden mb-10">
-            <div className="md:flex">
+            <div className="flex flex-col md:flex-row">
               <div className="md:flex-shrink-0 md:w-1/2">
                 <img 
                   src="/buddha.png" 
@@ -23,7 +23,7 @@ const About: FC = () => {
                   className="h-full w-full object-cover"
                 />
               </div>
-              <div className="p-6 md:p-8 md:w-1/2">
+              <div className="p-4 sm:p-6 md:p-8 md:w-1/2">
                 <h3 className="text-2xl font-heading font-semibold mb-4 text-yellow-400">
                   {t("ourMissionTitle")}
                 </h3>
