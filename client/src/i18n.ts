@@ -31,9 +31,9 @@ const enTranslations = {
   
   // About section
   aboutTitle: "About Sculpture Collection",
-  ourMissionTitle: "Our Mission",
-  ourMissionP1: "Our gallery is dedicated to preserving and showcasing the rich heritage of sculptural art from around the world. From classical marble masterpieces to contemporary interpretations, we believe in the power of three-dimensional art to inspire and transform.",
-  ourMissionP2: "Founded in 1998, our collection has grown to include works from renowned sculptors across different periods and styles, offering visitors a comprehensive journey through the evolution of this timeless art form.",
+  ourMissionTitle: "Mission",
+  ourMissionP1: "Dedicated to preserving and showcasing the rich heritage of sculptural art from around the world. From classical marble masterpieces to contemporary interpretations, the power of three-dimensional art inspires and transforms.",
+  ourMissionP2: "Founded in 1998, this collection includes works from renowned sculptors across different periods and styles, offering visitors a comprehensive journey through the evolution of this timeless art form.",
   
   sculptureHistoryTitle: "The History of Sculpture",
   sculptureHistoryP1: "Sculpture is one of humanity's oldest art forms, dating back to prehistoric times. Early examples were created from stone, clay, and other natural materials, often serving religious or ceremonial purposes.",
@@ -41,7 +41,7 @@ const enTranslations = {
   sculptureHistoryP3: "Renaissance masters like Michelangelo and Donatello revived classical traditions while introducing innovations in form and expression. From Baroque's dynamic movement to modernism's abstraction and contemporary experimental approaches, sculpture continues to evolve while maintaining its powerful ability to communicate ideas through three-dimensional form.",
   
   categoriesSectionTitle: "Sculpture Categories",
-  categoriesDescription: "Explore our diverse collection of sculptures organized by style, period, and medium.",
+  categoriesDescription: "Explore a diverse collection of sculptures organized by style, period, and medium.",
   
   materialTitle: "Materials",
   materialDescription: "Our collection features works in marble, bronze, stone, wood, and contemporary materials, each showcasing different techniques and artistic approaches.",
@@ -109,9 +109,9 @@ const deTranslations = {
   
   // About section
   aboutTitle: "Über Skulpturensammlung",
-  ourMissionTitle: "Unsere Mission",
-  ourMissionP1: "Unsere Galerie widmet sich der Bewahrung und Präsentation des reichen Erbes der Bildhauerkunst aus aller Welt. Von klassischen Marmormeisterwerken bis hin zu zeitgenössischen Interpretationen glauben wir an die Kraft der dreidimensionalen Kunst, zu inspirieren und zu transformieren.",
-  ourMissionP2: "Gegründet im Jahr 1998 ist unsere Sammlung auf Werke renommierter Bildhauer verschiedener Epochen und Stile angewachsen und bietet Besuchern eine umfassende Reise durch die Evolution dieser zeitlosen Kunstform.",
+  ourMissionTitle: "Mission",
+  ourMissionP1: "Widmet sich der Bewahrung und Präsentation des reichen Erbes der Bildhauerkunst aus aller Welt. Von klassischen Marmormeisterwerken bis hin zu zeitgenössischen Interpretationen zeigt sich die Kraft der dreidimensionalen Kunst, zu inspirieren und zu transformieren.",
+  ourMissionP2: "Gegründet im Jahr 1998 umfasst diese Sammlung Werke renommierter Bildhauer verschiedener Epochen und Stile und bietet Besuchern eine umfassende Reise durch die Evolution dieser zeitlosen Kunstform.",
   
   sculptureHistoryTitle: "Die Geschichte der Bildhauerei",
   sculptureHistoryP1: "Die Bildhauerei ist eine der ältesten Kunstformen der Menschheit und reicht bis in prähistorische Zeiten zurück. Frühe Beispiele wurden aus Stein, Ton und anderen natürlichen Materialien geschaffen und dienten oft religiösen oder zeremoniellen Zwecken.",
