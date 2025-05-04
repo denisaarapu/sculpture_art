@@ -14,9 +14,9 @@ const Footer: FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div>
             <Link href="/">
-              <a className="flex items-center mb-4">
+              <div className="flex items-center mb-4 cursor-pointer">
                 <Logo size="small" textColor="text-white" accentColor="text-accent" />
-              </a>
+              </div>
             </Link>
             <p className="text-gray-400 text-sm">
               {t("footerTagline")}
@@ -30,30 +30,30 @@ const Footer: FC = () => {
             <ul className="space-y-2 text-gray-400">
               <li>
                 <Link href="/">
-                  <a className="hover:text-accent transition duration-200">
+                  <div className="hover:text-accent transition duration-200 cursor-pointer">
                     {t("home")}
-                  </a>
+                  </div>
                 </Link>
               </li>
               <li>
                 <Link href="/#gallery">
-                  <a className="hover:text-accent transition duration-200">
+                  <div className="hover:text-accent transition duration-200 cursor-pointer">
                     {t("gallery")}
-                  </a>
+                  </div>
                 </Link>
               </li>
               <li>
                 <Link href="/about">
-                  <a className="hover:text-accent transition duration-200">
+                  <div className="hover:text-accent transition duration-200 cursor-pointer">
                     {t("about")}
-                  </a>
+                  </div>
                 </Link>
               </li>
               <li>
                 <Link href="/newsletter">
-                  <a className="hover:text-accent transition duration-200">
+                  <div className="hover:text-accent transition duration-200 cursor-pointer">
                     {t("newsletter")}
-                  </a>
+                  </div>
                 </Link>
               </li>
             </ul>
