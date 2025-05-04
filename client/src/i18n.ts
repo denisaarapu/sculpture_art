@@ -63,6 +63,8 @@ const enTranslations = {
   
   davidDescription: "Michelangelo's David - Renaissance masterpiece, early 1500s. This monumental marble sculpture represents the biblical hero with extraordinary anatomical precision and emotional depth.",
   
+  fluteDescription: "Flute Player - Modern abstract sculpture, mid 20th century. This elegant ceramic piece represents the minimalist approach of modern sculpture, focusing on flowing lines and emotional expression.",
+  
   exploreCollection: "Stay Tuned",
   
   // Newsletter section
@@ -144,6 +146,8 @@ const deTranslations = {
   venusDescription: "Venus von Arles - Klassische griechische Skulptur, 1. Jahrhundert v. Chr. Ein Marmormeisterwerk, das die idealisierte menschliche Form zeigt, typisch für die hellenistische Kunst.",
   
   davidDescription: "Michelangelos David - Renaissance-Meisterwerk, frühes 16. Jahrhundert. Diese monumentale Marmorskulptur stellt den biblischen Helden mit außergewöhnlicher anatomischer Präzision und emotionaler Tiefe dar.",
+  
+  fluteDescription: "Flötenspieler - Moderne abstrakte Skulptur, Mitte des 20. Jahrhunderts. Dieses elegante Keramikstück repräsentiert den minimalistischen Ansatz der modernen Bildhauerei, der sich auf fließende Linien und emotionalen Ausdruck konzentriert.",
   
   exploreCollection: "Bleiben Sie dran",
   
