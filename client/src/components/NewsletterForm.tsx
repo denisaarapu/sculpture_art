@@ -104,7 +104,7 @@ const NewsletterForm: FC = () => {
 
             <Button
               type="submit"
-              className="px-6 py-3 bg-accent hover:bg-accent-light text-white font-accent font-medium rounded-md transition duration-300 whitespace-nowrap h-12"
+              className="px-6 py-3 bg-accent hover:bg-accent-light text-black font-accent font-medium rounded-md transition duration-300 whitespace-nowrap h-12"
               disabled={mutation.isPending}
             >
               {mutation.isPending ? (
