@@ -1,5 +1,6 @@
 import { FC } from "react";
 import { useTranslation } from "react-i18next";
+import { Link } from "wouter";
 import NewsletterForm from "@/components/NewsletterForm";
 
 const Newsletter: FC = () => {
@@ -17,6 +18,14 @@ const Newsletter: FC = () => {
           </p>
           
           <NewsletterForm />
+          
+          <div className="mt-12 text-center">
+            <Link href="/">
+              <div className="inline-block px-6 py-3 bg-gray-800 hover:bg-gray-700 text-white font-accent font-medium rounded-md transition duration-300 cursor-pointer">
+                {t("backToHome")}
+              </div>
+            </Link>
+          </div>
         </div>
       </div>
     </section>

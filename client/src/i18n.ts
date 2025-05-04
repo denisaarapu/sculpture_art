@@ -67,6 +67,7 @@ const enTranslations = {
   subscribe: "Subscribe",
   privacyNote: "By subscribing, you agree to our privacy policy. We respect your privacy and will never share your information.",
   subscriptionSuccess: "Thank you for subscribing! You'll receive our updates shortly.",
+  backToHome: "Back to Home",
   
   // Footer
   footerTagline: "Celebrating sculptural artistry and preserving cultural heritage through our curated collection.",
@@ -144,6 +145,7 @@ const deTranslations = {
   subscribe: "Abonnieren",
   privacyNote: "Mit dem Abonnieren stimmen Sie unserer Datenschutzrichtlinie zu. Wir respektieren Ihre Privatsphäre und werden Ihre Daten niemals weitergeben.",
   subscriptionSuccess: "Vielen Dank für Ihr Abonnement! Sie erhalten in Kürze unsere Updates.",
+  backToHome: "Zurück zur Startseite",
   
   // Footer
   footerTagline: "Wir feiern die bildhauerische Kunst und bewahren das kulturelle Erbe durch unsere kuratierte Sammlung.",
