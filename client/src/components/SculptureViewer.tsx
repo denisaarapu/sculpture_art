@@ -110,17 +110,13 @@ const SculptureViewer: FC<SculptureViewerProps> = ({
   return (
     <Dialog open={isOpen} onOpenChange={setIsOpen}>
       <DialogTrigger asChild>
-        <div className={`relative cursor-pointer overflow-hidden rounded-md ${className || ""} group`}>
+        <div className={`relative cursor-pointer overflow-hidden rounded-md ${className || ""} group shadow-md hover:shadow-2xl transition-all duration-300`}>
           <img 
             src={imageSrc} 
             alt={alt || title} 
-            className="rounded-md w-full h-full object-contain transition-transform duration-500 group-hover:scale-105"
+            className="rounded-md w-full h-full object-contain transition-transform duration-500 group-hover:scale-110"
           />
-          <div className="absolute inset-0 bg-black bg-opacity-20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-            <span className="text-white bg-black bg-opacity-50 px-3 py-1 rounded-full text-sm">
-              View in 3D
-            </span>
-          </div>
+          <div className="absolute inset-0 bg-black bg-opacity-10 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
         </div>
       </DialogTrigger>
       <DialogContent className="sm:max-w-[600px] md:max-w-[800px] lg:max-w-[1000px] max-h-[90vh] overflow-hidden bg-gray-900 text-white border-gray-700">
@@ -141,9 +137,9 @@ const SculptureViewer: FC<SculptureViewerProps> = ({
           onTouchEnd={handleTouchEnd}
         >
           <div 
-            className="transition-all duration-300 ease-out w-full h-full flex items-center justify-center" 
+            className="transition-all duration-500 ease-out w-full h-full flex items-center justify-center" 
             style={{ 
-              transform: `perspective(1000px) rotateX(${rotation.x}deg) rotateY(${rotation.y}deg) scale(${zoom})`,
+              transform: `perspective(1200px) rotateX(${rotation.x}deg) rotateY(${rotation.y}deg) scale(${zoom})`,
               transformStyle: 'preserve-3d',
               backfaceVisibility: 'hidden'
             }}
@@ -154,7 +150,8 @@ const SculptureViewer: FC<SculptureViewerProps> = ({
               className="max-h-[90%] max-w-[90%] object-contain"
               draggable="false"
               style={{ 
-                filter: 'drop-shadow(0 20px 13px rgba(0, 0, 0, 0.6))'
+                filter: 'drop-shadow(0 30px 20px rgba(0, 0, 0, 0.8))',
+                transform: 'translateZ(40px)'
               }}
             />
           </div>
