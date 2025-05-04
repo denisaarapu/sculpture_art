@@ -16,7 +16,6 @@ const Navbar: FC = () => {
 
   const navigationLinks = [
     { href: "/", label: t("home") },
-    { href: "/#gallery", label: t("gallery") },
     { href: "/about", label: t("about") },
     { href: "/newsletter", label: t("newsletter") },
   ];
