@@ -143,7 +143,7 @@ const About: FC = () => {
           </div>
           
           <div className="text-center">
-            <Link href="/#gallery">
+            <Link href="/newsletter">
               <div className="inline-block px-6 py-3 bg-yellow-400 hover:bg-yellow-500 text-black font-accent font-medium rounded-md transition duration-300 cursor-pointer">
                 {t("exploreCollection")}
               </div>

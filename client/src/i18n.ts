@@ -59,7 +59,7 @@ const enTranslations = {
   categoryAbstract: "Abstract",
   categoryFigurative: "Figurative",
   
-  exploreCollection: "Explore Our Collection",
+  exploreCollection: "Stay Tuned",
   
   // Newsletter section
   stayUpdatedTitle: "Stay Updated",
@@ -136,7 +136,7 @@ const deTranslations = {
   categoryAbstract: "Abstrakt",
   categoryFigurative: "Figurativ",
   
-  exploreCollection: "Entdecken Sie unsere Sammlung",
+  exploreCollection: "Bleiben Sie dran",
   
   // Newsletter section
   stayUpdatedTitle: "Bleiben Sie informiert",

@@ -120,7 +120,7 @@ const NewsletterForm: FC = () => {
         </form>
       </Form>
 
-      <p className="text-sm text-gray-400">
+      <p className="text-sm text-white">
         {t("privacyNote")}
       </p>
 
