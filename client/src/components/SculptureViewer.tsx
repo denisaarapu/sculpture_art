@@ -107,7 +107,7 @@ const SculptureViewer: FC<SculptureViewerProps> = ({
           />
         </div>
       </DialogTrigger>
-      <DialogContent className="sm:max-w-[600px] md:max-w-[800px] max-h-[90vh] overflow-hidden bg-gray-900 text-white border-gray-700">
+      <DialogContent className="sm:max-w-[600px] md:max-w-[800px] lg:max-w-[1000px] max-h-[90vh] overflow-hidden bg-gray-900 text-white border-gray-700">
         <DialogHeader>
           <DialogTitle className="text-xl font-heading font-semibold text-white">{title}</DialogTitle>
           <DialogDescription className="text-gray-300">
@@ -115,7 +115,7 @@ const SculptureViewer: FC<SculptureViewerProps> = ({
           </DialogDescription>
         </DialogHeader>
         <div 
-          className="relative h-[50vh] sm:h-[60vh] w-full overflow-hidden rounded-md mt-4 bg-black flex items-center justify-center"
+          className="relative h-[60vh] sm:h-[70vh] w-full overflow-hidden rounded-md mt-4 bg-black flex items-center justify-center"
           onMouseDown={handleMouseDown}
           onMouseMove={handleMouseMove}
           onMouseUp={handleMouseUp}
@@ -125,7 +125,7 @@ const SculptureViewer: FC<SculptureViewerProps> = ({
           onTouchEnd={handleTouchEnd}
         >
           <div 
-            className="transition-all duration-200 ease-out" 
+            className="transition-all duration-200 ease-out w-full h-full flex items-center justify-center" 
             style={{ 
               transform: `rotateX(${rotation.x}deg) rotateY(${rotation.y}deg) scale(${zoom})`,
               transformStyle: 'preserve-3d',
@@ -135,7 +135,7 @@ const SculptureViewer: FC<SculptureViewerProps> = ({
             <img 
               src={imageSrc} 
               alt={alt || title} 
-              className="max-h-full max-w-full object-contain"
+              className="max-h-[90%] max-w-[90%] object-contain"
               draggable="false"
             />
           </div>
@@ -167,7 +167,7 @@ const SculptureViewer: FC<SculptureViewerProps> = ({
           </div>
         </div>
         <div className="text-center text-gray-400 text-sm mt-2">
-          <p>Trageți pentru a roti • Folosiți butoanele pentru zoom • Apăsați butonul de resetare pentru a reveni la poziția inițială</p>
+          <p>Drag to rotate • Use buttons to zoom • Click the reset button to reset view</p>
         </div>
       </DialogContent>
     </Dialog>
