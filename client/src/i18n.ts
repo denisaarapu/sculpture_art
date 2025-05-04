@@ -65,6 +65,8 @@ const enTranslations = {
   
   fluteDescription: "Flute Player - Modern abstract sculpture, mid 20th century. This elegant ceramic piece represents the minimalist approach of modern sculpture, focusing on flowing lines and emotional expression.",
   
+  horseDescription: "Abstract Horse - Contemporary metal sculpture, early 21st century. This dynamic bronze structure captures movement and energy through its deconstructed form, exemplifying contemporary sculptural techniques.",
+  
   exploreCollection: "Stay Tuned",
   
   // Newsletter section
@@ -148,6 +150,8 @@ const deTranslations = {
   davidDescription: "Michelangelos David - Renaissance-Meisterwerk, frühes 16. Jahrhundert. Diese monumentale Marmorskulptur stellt den biblischen Helden mit außergewöhnlicher anatomischer Präzision und emotionaler Tiefe dar.",
   
   fluteDescription: "Flötenspieler - Moderne abstrakte Skulptur, Mitte des 20. Jahrhunderts. Dieses elegante Keramikstück repräsentiert den minimalistischen Ansatz der modernen Bildhauerei, der sich auf fließende Linien und emotionalen Ausdruck konzentriert.",
+  
+  horseDescription: "Abstraktes Pferd - Zeitgenössische Metallskulptur, frühes 21. Jahrhundert. Diese dynamische Bronzestruktur fängt Bewegung und Energie durch ihre dekonstruierte Form ein und veranschaulicht zeitgenössische bildhauerische Techniken.",
   
   exploreCollection: "Bleiben Sie dran",
   

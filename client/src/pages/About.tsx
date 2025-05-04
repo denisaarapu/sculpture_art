@@ -104,9 +104,19 @@ const About: FC = () => {
               <div className="text-yellow-400 text-5xl mb-4">
                 <i className="fas fa-vector-square"></i>
               </div>
-              <h4 className="text-xl font-heading font-semibold">
+              <h4 className="text-xl font-heading font-semibold mb-4">
                 {t("categoryContemporary")}
               </h4>
+              <div className="mt-4">
+                <img 
+                  src="/horse-sculpture.png" 
+                  alt="Abstract horse sculpture" 
+                  className="h-64 mx-auto object-cover rounded-md"
+                />
+                <p className="text-base mt-4 text-gray-200">
+                  {t("horseDescription")}
+                </p>
+              </div>
             </div>
             
             {/* Abstract */}
