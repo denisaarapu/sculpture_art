@@ -67,6 +67,8 @@ const enTranslations = {
   
   horseDescription: "Abstract Horse - Contemporary metal sculpture, early 21st century. This dynamic bronze structure captures movement and energy through its deconstructed form, exemplifying contemporary sculptural techniques.",
   
+  faceDescription: "Surreal Face - Abstract conceptual sculpture, late 20th century. This plaster piece explores human identity and emotion through fragmentation and symbolic representation of the face overlaid with a hand.",
+  
   exploreCollection: "Stay Tuned",
   
   // Newsletter section
@@ -152,6 +154,8 @@ const deTranslations = {
   fluteDescription: "Flötenspieler - Moderne abstrakte Skulptur, Mitte des 20. Jahrhunderts. Dieses elegante Keramikstück repräsentiert den minimalistischen Ansatz der modernen Bildhauerei, der sich auf fließende Linien und emotionalen Ausdruck konzentriert.",
   
   horseDescription: "Abstraktes Pferd - Zeitgenössische Metallskulptur, frühes 21. Jahrhundert. Diese dynamische Bronzestruktur fängt Bewegung und Energie durch ihre dekonstruierte Form ein und veranschaulicht zeitgenössische bildhauerische Techniken.",
+  
+  faceDescription: "Surreales Gesicht - Abstrakte konzeptuelle Skulptur, spätes 20. Jahrhundert. Dieses Gipsstück erforscht menschliche Identität und Emotion durch Fragmentierung und symbolische Darstellung des Gesichts, überlagert mit einer Hand.",
   
   exploreCollection: "Bleiben Sie dran",
   
