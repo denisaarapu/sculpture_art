@@ -22,13 +22,13 @@ const Navbar: FC = () => {
   ];
 
   return (
-    <nav className="bg-gray-200 shadow-md sticky top-0 z-50">
+    <nav className="bg-gray-900 shadow-md sticky top-0 z-50">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16">
           <div className="flex items-center">
             <Link href="/">
               <a className="flex-shrink-0 flex items-center">
-                <Logo />
+                <Logo textColor="text-white" />
               </a>
             </Link>
           </div>
@@ -40,8 +40,8 @@ const Navbar: FC = () => {
                   <a className={cn(
                     "px-3 py-2 text-sm font-medium transition-colors",
                     location === link.href 
-                      ? "text-accent" 
-                      : "text-primary hover:text-accent"
+                      ? "text-yellow-400" 
+                      : "text-white hover:text-yellow-400"
                   )}>
                     {link.label}
                   </a>
@@ -57,7 +57,7 @@ const Navbar: FC = () => {
             <button
               onClick={toggleMobileMenu}
               type="button"
-              className="inline-flex items-center justify-center p-2 rounded-md text-primary hover:bg-gray-100 focus:outline-none"
+              className="inline-flex items-center justify-center p-2 rounded-md text-white hover:bg-gray-800 focus:outline-none"
               aria-controls="mobile-menu"
               aria-expanded={mobileMenuOpen}
             >

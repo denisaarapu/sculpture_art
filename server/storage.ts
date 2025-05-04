@@ -21,84 +21,79 @@ export interface IStorage {
   getSculpture(id: number): Promise<Sculpture | undefined>;
 }
 
-export class MemStorage implements IStorage {
-  private users: Map<number, User>;
-  private subscribers: Map<number, Subscriber>;
-  private sculptures: Map<number, Sculpture>;
-  private currentUserId: number;
-  private currentSubscriberId: number;
-  private currentSculptureId: number;
+import { db } from "./db";
+import { eq } from "drizzle-orm";
 
-  constructor() {
-    this.users = new Map();
-    this.subscribers = new Map();
-    this.sculptures = new Map();
-    this.currentUserId = 1;
-    this.currentSubscriberId = 1;
-    this.currentSculptureId = 1;
-    
-    // Initialize with some sculpture data
-    this.initializeSculptures();
-  }
-
+export class DatabaseStorage implements IStorage {
   // User methods
   async getUser(id: number): Promise<User | undefined> {
-    return this.users.get(id);
+    const [user] = await db.select().from(users).where(eq(users.id, id));
+    return user || undefined;
   }
 
   async getUserByUsername(username: string): Promise<User | undefined> {
-    return Array.from(this.users.values()).find(
-      (user) => user.username === username,
-    );
+    const [user] = await db.select().from(users).where(eq(users.username, username));
+    return user || undefined;
   }
 
   async createUser(insertUser: InsertUser): Promise<User> {
-    const id = this.currentUserId++;
-    const user: User = { ...insertUser, id };
-    this.users.set(id, user);
+    const [user] = await db
+      .insert(users)
+      .values(insertUser)
+      .returning();
     return user;
   }
   
   // Subscriber methods
   async getSubscribers(): Promise<Subscriber[]> {
-    return Array.from(this.subscribers.values());
+    return await db.select().from(subscribers);
   }
   
   async getSubscriberByEmail(email: string): Promise<Subscriber | undefined> {
-    return Array.from(this.subscribers.values()).find(
-      (subscriber) => subscriber.email === email
-    );
+    const [subscriber] = await db
+      .select()
+      .from(subscribers)
+      .where(eq(subscribers.email, email));
+    return subscriber || undefined;
   }
   
   async createSubscriber(insertSubscriber: InsertSubscriber): Promise<Subscriber> {
-    const id = this.currentSubscriberId++;
-    const subscriber: Subscriber = { 
-      ...insertSubscriber, 
-      id, 
-      subscribedAt: new Date().toISOString() 
-    };
-    this.subscribers.set(id, subscriber);
+    const subscribedAt = new Date().toISOString();
+    const [subscriber] = await db
+      .insert(subscribers)
+      .values({ ...insertSubscriber, subscribedAt })
+      .returning();
     return subscriber;
   }
   
   // Sculpture methods
   async getSculptures(): Promise<Sculpture[]> {
-    return Array.from(this.sculptures.values());
+    return await db.select().from(sculptures);
   }
   
   async getSculpturesByFolder(folder: string): Promise<Sculpture[]> {
-    return Array.from(this.sculptures.values()).filter(
-      (sculpture) => sculpture.folder === folder
-    );
+    return await db
+      .select()
+      .from(sculptures)
+      .where(eq(sculptures.folder, folder));
   }
   
   async getSculpture(id: number): Promise<Sculpture | undefined> {
-    return this.sculptures.get(id);
+    const [sculpture] = await db
+      .select()
+      .from(sculptures)
+      .where(eq(sculptures.id, id));
+    return sculpture || undefined;
   }
+}
+
+// Initialize the database with sample data
+const initializeSculptures = async () => {
+  const sculptureCount = await db.select().from(sculptures);
   
-  // Initialize with sculpture data
-  private initializeSculptures() {
-    const sculptureData: InsertSculpture[] = [
+  // Only initialize if there are no sculptures
+  if (sculptureCount.length === 0) {
+    const sculptureData = [
       {
         title: "Venus of Milo",
         titleDe: "Venus von Milo",
@@ -167,11 +162,14 @@ export class MemStorage implements IStorage {
       }
     ];
     
-    sculptureData.forEach(sculpture => {
-      const id = this.currentSculptureId++;
-      this.sculptures.set(id, { ...sculpture, id });
-    });
+    await db.insert(sculptures).values(sculptureData);
   }
-}
+};
 
-export const storage = new MemStorage();
+// Initialize data and export storage
+initializeSculptures()
+  .catch(err => {
+    console.error("Error initializing database:", err);
+  });
+
+export const storage = new DatabaseStorage();
