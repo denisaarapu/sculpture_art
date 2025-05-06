@@ -1,12 +1,12 @@
 {
-  "include": ["client/src/**/*", "shared/**/*", "server/**/*"],
+  "include": ["client/src/**/*", "shared/**/*", "server/**/*", "*.ts"],
   "exclude": ["node_modules", "build", "dist", "**/*.test.ts"],
   "compilerOptions": {
     "incremental": true,
     "tsBuildInfoFile": "./node_modules/typescript/tsbuildinfo",
     "noEmit": true,
     "target": "ES2020",
-    "module": "NodeNext",
+    "module": "ESNext",
     "moduleResolution": "NodeNext",
     "strict": true,
     "lib": ["esnext", "dom", "dom.iterable"],
@@ -23,7 +23,11 @@
       "tailwindcss": ["./node_modules/tailwindcss"],
       "tailwindcss/*": ["./node_modules/tailwindcss/*"],
       "@tailwindcss/*": ["./node_modules/@tailwindcss/*"],
-      "@assets/*": ["./attached_assets/*"]
+      "@assets/*": ["./attached_assets/*"],
+      "vite": ["./node_modules/vite"],
+      "@vitejs/plugin-react": ["./node_modules/@vitejs/plugin-react"],
+      "@replit/vite-plugin-runtime-error-modal": ["./node_modules/@replit/vite-plugin-runtime-error-modal"],
+      "@replit/vite-plugin-cartographer": ["./node_modules/@replit/vite-plugin-cartographer"]
     },
     "resolveJsonModule": true,
     "allowSyntheticDefaultImports": true,
