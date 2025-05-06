@@ -19,6 +19,9 @@
       "@/*": ["./client/src/*"],
       "@shared/*": ["./shared/*"],
       "drizzle-kit": ["./node_modules/drizzle-kit"],
+      "tailwindcss": ["./node_modules/tailwindcss"],
+      "tailwindcss/*": ["./node_modules/tailwindcss/*"],
+      "@tailwindcss/*": ["./node_modules/@tailwindcss/*"],
       "@assets/*": ["./attached_assets/*"]
     },
     "resolveJsonModule": true,
