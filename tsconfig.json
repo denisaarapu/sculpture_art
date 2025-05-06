@@ -12,12 +12,16 @@
     "esModuleInterop": true,
     "skipLibCheck": true,
     "allowImportingTsExtensions": true,
-    "moduleResolution": "bundler",
+    "moduleResolution": "NodeNext",
     "baseUrl": ".",
     "types": ["node", "vite/client"],
     "paths": {
       "@/*": ["./client/src/*"],
-      "@shared/*": ["./shared/*"]
-    }
+      "@shared/*": ["./shared/*"],
+      "drizzle-kit": ["./node_modules/drizzle-kit"],
+      "@assets/*": ["./attached_assets/*"]
+    },
+    "resolveJsonModule": true,
+    "allowSyntheticDefaultImports": true
   }
 }
