@@ -1,0 +1,68 @@
+/* Stiluri de bază pentru aplicația Sculpture Art */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  background-color: #000000;
+  color: #ffffff;
+  line-height: 1.6;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Container principal */
+.app {
+  min-height: 100vh;
+  background-color: #000000;
+}
+
+/* Stiluri pentru componente de bază */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Stiluri responsive */
+@media (max-width: 768px) {
+  .container {
+    padding: 0 15px;
+  }
+}
+
+/* Stiluri pentru imagini */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Stiluri pentru linkuri */
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Stiluri pentru butoane */
+button {
+  cursor: pointer;
+  border: none;
+  background: none;
+  font-family: inherit;
+}
+
+button:focus {
+  outline: 2px solid #ffffff;
+  outline-offset: 2px;
+}

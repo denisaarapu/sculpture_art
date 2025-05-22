@@ -1,8 +1,8 @@
 import { FC, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { useMutation } from "@tanstack/react-query";
-import { apiRequest } from "@/lib/queryClient.tsx";
-import { useToast } from "@/hooks/use-toast.tsx";
+import { apiRequest } from "@/lib/queryClient.ts";
+import { useToast } from "@/hooks/use-toast.ts";
 import { z } from "zod";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
