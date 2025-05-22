@@ -1,7 +1,7 @@
 import { FC, ReactNode, useEffect } from "react";
 import { useTranslation } from "react-i18next";
-import Navbar from "./Navbar";
-import Footer from "./Footer";
+import Navbar from "./Navbar.jsx";
+import Footer from "./Footer.jsx";
 
 interface LayoutProps {
   children: ReactNode;

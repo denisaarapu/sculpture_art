@@ -1,7 +1,7 @@
 import { FC } from "react";
 import { useTranslation } from "react-i18next";
 import { Link } from "wouter";
-import NewsletterForm from "@/components/NewsletterForm";
+import NewsletterForm from "@/components/NewsletterForm.tsx";
 
 const Newsletter: FC = () => {
   const { t } = useTranslation();

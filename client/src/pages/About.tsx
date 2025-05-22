@@ -1,8 +1,8 @@
 import { FC } from "react";
 import { useTranslation } from "react-i18next";
 import { Link } from "wouter";
-import CategorySlideshow from "@/components/CategorySlideshow";
-import SculptureViewer from "@/components/SculptureViewer";
+import CategorySlideshow from "@/components/CategorySlideshow.tsx";
+import SculptureViewer from "@/components/SculptureViewer.tsx";
 
 const About: FC = () => {
   const { t } = useTranslation();

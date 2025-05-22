@@ -1,4 +1,4 @@
-import { Sculpture } from "@shared/schema";
+import { Sculpture } from "@shared/schema.ts";
 
 // This is a backup in case the API call fails
 export const sampleSculptures: Sculpture[] = [

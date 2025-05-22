@@ -1,9 +1,9 @@
 import { FC, useState } from "react";
 import { Link, useLocation } from "wouter";
 import { useTranslation } from "react-i18next";
-import Logo from "./Logo";
-import LanguageSwitcher from "./LanguageSwitcher";
-import { cn } from "@/lib/utils";
+import Logo from "./Logo.tsx";
+import LanguageSwitcher from "./LanguageSwitcher.tsx";
+import { cn } from "@/lib/utils.ts";
 
 const Navbar: FC = () => {
   const [location] = useLocation();

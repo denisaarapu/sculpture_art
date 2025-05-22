@@ -1,13 +1,15 @@
 import { Switch, Route } from "wouter";
 import { QueryClientProvider } from "@tanstack/react-query";
-import { queryClient } from "./lib/queryClient";
-import { Toaster } from "@/components/ui/toaster";
-import { TooltipProvider } from "@/components/ui/tooltip";
-import NotFound from "@/pages/not-found";
-import Layout from "@/components/Layout";
-import Home from "@/pages/Home";
-import About from "@/pages/About";
-import Newsletter from "@/pages/Newsletter";
+import { queryClient } from "./lib/queryClient.ts";
+import { Toaster } from "@/components/ui/toaster.tsx";
+import { TooltipProvider } from "@/components/ui/tooltip.tsx";
+import NotFound from "@/pages/not-found.tsx";
+import Layout from "@/components/Layout.tsx";
+import Home from "@/pages/Home.tsx";
+import About from "@/pages/About.tsx";
+import Newsletter from "@/pages/Newsletter.tsx";
+import './styles.css'; // Importă fișierul CSS în aplicația ta
+
 
 function Router() {
   return (

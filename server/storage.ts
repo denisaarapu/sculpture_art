@@ -2,7 +2,7 @@ import {
   users, type User, type InsertUser,
   subscribers, type Subscriber, type InsertSubscriber,
   sculptures, type Sculpture, type InsertSculpture 
-} from "@shared/schema";
+} from "@shared/schema.ts";
 
 export interface IStorage {
   // User methods
@@ -21,7 +21,7 @@ export interface IStorage {
   getSculpture(id: number): Promise<Sculpture | undefined>;
 }
 
-import { db } from "./db";
+import { db } from "./db.js";
 import { eq } from "drizzle-orm";
 
 export class DatabaseStorage implements IStorage {

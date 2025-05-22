@@ -2,9 +2,9 @@ import { FC, useCallback, useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { useQuery } from "@tanstack/react-query";
 import useEmblaCarousel from "embla-carousel-react";
-import { Button } from "@/components/ui/button";
-import { Skeleton } from "@/components/ui/skeleton";
-import { Sculpture } from "@shared/schema";
+import { Button } from "@/components/ui/button.tsx";
+import { Skeleton } from "@/components/ui/skeleton.tsx";
+import { Sculpture } from "@shared/schema.ts";
 
 const Slideshow: FC = () => {
   const { t, i18n } = useTranslation();

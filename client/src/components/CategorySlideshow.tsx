@@ -1,7 +1,7 @@
 import { FC, useCallback, useEffect, useState, ReactNode } from "react";
 import { useTranslation } from "react-i18next";
 import useEmblaCarousel from "embla-carousel-react";
-import { Button } from "@/components/ui/button";
+import { Button } from "@/components/ui/button.tsx";
 
 interface CategorySlideshowProps {
   children: ReactNode[];

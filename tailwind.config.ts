@@ -1,17 +1,19 @@
 import type { Config } from "tailwindcss";
 
 export default {
-  darkMode: ["class"],
-  content: ["./client/index.html", "./client/src/**/*.{js,jsx,ts,tsx}"],
+  darkMode: "class", // Folosește clasa pentru activarea modului întunecat
+  content: [
+    "./client/src/**/*.{js,jsx,ts,tsx}", // Asigură-te că incluzi toate fișierele relevante
+  ],
   theme: {
     extend: {
       borderRadius: {
-        lg: "var(--radius)",
+        lg: "var(--radius)", // Folosește variabilele CSS
         md: "calc(var(--radius) - 2px)",
         sm: "calc(var(--radius) - 4px)",
       },
       colors: {
-        background: "hsl(var(--background))",
+        background: "hsl(var(--background))", // Folosește variabilele CSS pentru culori
         foreground: "hsl(var(--foreground))",
         card: {
           DEFAULT: "hsl(var(--card))",
@@ -64,20 +66,12 @@ export default {
       },
       keyframes: {
         "accordion-down": {
-          from: {
-            height: "0",
-          },
-          to: {
-            height: "var(--radix-accordion-content-height)",
-          },
+          from: { height: "0" },
+          to: { height: "var(--radix-accordion-content-height)" },
         },
         "accordion-up": {
-          from: {
-            height: "var(--radix-accordion-content-height)",
-          },
-          to: {
-            height: "0",
-          },
+          from: { height: "var(--radix-accordion-content-height)" },
+          to: { height: "0" },
         },
       },
       animation: {
@@ -86,5 +80,5 @@ export default {
       },
     },
   },
-  plugins: [require("tailwindcss-animate"), require("@tailwindcss/typography")],
+  plugins: [require("tailwindcss-animate"), require("@tailwindcss/typography")], // Pluginuri pentru animații și tipografie
 } satisfies Config;

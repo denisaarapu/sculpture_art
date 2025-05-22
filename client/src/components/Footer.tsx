@@ -1,8 +1,8 @@
 import { FC } from "react";
 import { Link } from "wouter";
 import { useTranslation } from "react-i18next";
-import Logo from "./Logo";
-import LanguageSwitcher from "./LanguageSwitcher";
+import Logo from "./Logo.tsx";
+import LanguageSwitcher from "./LanguageSwitcher.tsx";
 
 const Footer: FC = () => {
   const { t } = useTranslation();

@@ -1,6 +1,6 @@
 import { FC } from "react";
 import { useTranslation } from "react-i18next";
-import { cn } from "@/lib/utils";
+import { cn } from "@/lib/utils.ts";
 
 const LanguageSwitcher: FC = () => {
   const { i18n } = useTranslation();

@@ -1,11 +1,11 @@
 import { FC, useState, useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import { useQuery } from "@tanstack/react-query";
-import { apiRequest } from "@/lib/queryClient";
-import { Skeleton } from "@/components/ui/skeleton";
-import { Button } from "@/components/ui/button";
-import { cn } from "@/lib/utils";
-import { Sculpture } from "@shared/schema";
+import { apiRequest } from "@/lib/queryClient.ts";
+import { Skeleton } from "@/components/ui/skeleton.tsx";
+import { Button } from "@/components/ui/button.tsx";
+import { cn } from "@/lib/utils.ts";
+import { Sculpture } from "@shared/schema.ts";
 
 const Gallery: FC = () => {
   const { t, i18n } = useTranslation();

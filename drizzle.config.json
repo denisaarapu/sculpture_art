@@ -1,0 +1,8 @@
+{
+  "out": "./migrations",
+  "schema": "./shared/schema.ts",
+  "dialect": "postgresql",
+  "dbCredentials": {
+    "connectionString": "postgres://postgres:Denysuka24!@localhost:5432/sculpture_art_db"
+  }
+}

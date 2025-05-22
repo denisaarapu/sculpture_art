@@ -3,7 +3,7 @@ import fs from "fs";
 import path from "path";
 import { createServer as createViteServer, createLogger } from "vite";
 import { type Server } from "http";
-import viteConfig from "../vite.config";
+import viteConfig from "../vite.config.ts";
 import { nanoid } from "nanoid";
 
 const viteLogger = createLogger();
@@ -33,7 +33,8 @@ export async function setupVite(app: Express, server: Server) {
       ...viteLogger,
       error: (msg, options) => {
         viteLogger.error(msg, options);
-        process.exit(1);
+        console.error("Vite Error:", msg);
+        // Nu ieșim din proces pentru a menține aplicația rulând în caz de erori minore
       },
     },
     server: serverOptions,
@@ -46,13 +47,13 @@ export async function setupVite(app: Express, server: Server) {
 
     try {
       const clientTemplate = path.resolve(
-        import.meta.dirname,
+        __dirname,
         "..",
         "client",
         "index.html",
       );
 
-      // always reload the index.html file from disk incase it changes
+      // Încărcăm template-ul și adăugăm un parametru pentru a preveni cache-ing
       let template = await fs.promises.readFile(clientTemplate, "utf-8");
       template = template.replace(
         `src="/src/main.tsx"`,
@@ -68,7 +69,7 @@ export async function setupVite(app: Express, server: Server) {
 }
 
 export function serveStatic(app: Express) {
-  const distPath = path.resolve(import.meta.dirname, "public");
+  const distPath = path.resolve(__dirname, "..", "public");
 
   if (!fs.existsSync(distPath)) {
     throw new Error(
